@@ -145,7 +145,7 @@ class Connector
                  * Make sure localSock's receiveBufferSize is taken into
                  * account including after it gets changed.
                  */
-                int receiveBufferSize = 1500;
+                int receiveBufferSize = 65000;
                 /*
                 if(localSock.getTCPSocket() != null)
                 {
