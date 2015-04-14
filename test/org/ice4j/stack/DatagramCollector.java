@@ -45,7 +45,7 @@ public class DatagramCollector
     public void startListening(DatagramSocket sock)
     {
         this.sock = sock;
-        receivedPacket = new DatagramPacket(new byte[4096], 4096);
+        receivedPacket = new DatagramPacket(new byte[4096*10], 4096*10);
 
         new Thread(this).start();
     }
